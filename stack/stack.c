@@ -1,5 +1,6 @@
 #include<stdio.h>
 #define n 5
+//declare an array of size of n
 int stack[n];
 int top=-1;
 
@@ -28,44 +29,38 @@ void main ()
         }
     } while(ch != 0);
 }
+
 void push()
-{
-    
-    
-    if(top==n-1)
+{    
+    if(top==n-1) //check the overflow condition. That means there is no place for any new element
         printf("Overflow");
     else
-    {
-        int x;
+    {    
+        int x; //take the input from users
         printf("\nEnter data:");
-        scanf("%d",&x);
-        top++;
-        stack[top]=x;
+        scanf("%d",&x); 
+        top++; // increment the top to enter the element.
+        stack[top]=x; // enter the element in top position. the push operation is successful.
     }
 }
 void pop()
 {
-    int x;
-    if(top==-1)
+    if(top==-1) // check the underflow conditiion
         printf("\nUnderflow"); 
     else
     {
-        
-        x=stack[top];
-        top--;
-        printf(" %d",x);
+        printf(" %d",stack[top]); // print the top most element 
+        top--; //decrement the top. //pop operation is successful
     }
 
 }
 void peek()
 {
-    int x;
-    if(top==-1)
+    if(top==-1) // check the underflow conditiion
         printf("\nUnderflow");
     else
     {
-        x=stack[top];
-       printf("%d",x);
+       printf("%d",stack[top]); // print the top most element 
     }
 }
 void display()
