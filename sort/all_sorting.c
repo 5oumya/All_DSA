@@ -46,7 +46,7 @@ void insertion_sort(int a[],int n)
 
 void main ()
 {
-    int a[]={2, 3, 1, 5, 4};
+    int a[]={20,41,16,11,31};
     int n1=5;
     selection_sort(a,n1);
     printf("\nSorted by selection:\n");
@@ -58,7 +58,7 @@ void main ()
     printf("\nSorted by bubble:\n");
     for(int i=0;i<n2;i++)
         printf("%d ",b[i]);
-    int c[]={289, 323, 121, 576, 40};
+    int c[]={1, 0, -1, 2, -2};
     int n3=5;
     insertion_sort(c,n3);
     printf("\nSorted by insertion:\n");
