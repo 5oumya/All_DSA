@@ -6,9 +6,10 @@ void selection_sort(int a[],int n)
         int min=i;
         for(int j=i+1;j<n;j++)
         {
-            if(a[j]<a[min])
+            if(a[j]<a[min])//condition
                 min=j;
         }
+        //swap
         int temp=a[min];
         a[min]=a[i];
         a[i]=temp;
@@ -20,9 +21,9 @@ void bubble_sort(int a[],int n)
     {
         for(int j=0;j<n-1-i;j++)
         {
-            if(a[j]>a[j+1])
+            if(a[j]>a[j+1])//condition
             {
-                int temp=a[j];
+                int temp=a[j]; //swaping
                 a[j]=a[j+1];
                 a[j+1]=temp;
             }
@@ -35,12 +36,12 @@ void insertion_sort(int a[],int n)
     {
         int key=a[i];
         int j=i-1;
-        while(j>=0 && a[j]>key)
+        while(j>=0 && a[j]>key) //condition
         {
             a[j+1]=a[j];
             j--;
         }
-        a[j+1]=key;
+        a[j+1]=key; //insert
     }
 }
 
