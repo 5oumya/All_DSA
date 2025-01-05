@@ -44,8 +44,7 @@ void insertion_sort(int a[],int n)
         a[j+1]=key; //insert
     }
 }
-
-void main ()
+int main ()
 {
     int a[]={20,41,16,11,31};
     int n1=5;

@@ -9,7 +9,7 @@ void main()
     // for(i=0;i<n;i++)
     //     scanf("%d",&a[i]);
     n=6;
-    int a[]={4, 0, 2, 9, 1, 5};
+    int a[]={4, 1, 2, 9, 0, 5};
     // sorting
     for( i=0;i<n-1;i++)
     {
