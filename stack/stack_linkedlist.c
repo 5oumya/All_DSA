@@ -8,14 +8,14 @@ struct node
 struct node *top=0;
 void push()
 {
-    struct node *newnode;
+    struct node *newnode; // create a newnode using malloc function
     int x;
     printf("The data :");
-    scanf("%d",&x);
+    scanf("%d",&x); // take the input from users
     newnode=(struct node*)malloc(sizeof(struct node));
-    newnode->data=x;
-    newnode->next=top;
-    top=newnode;
+    newnode->data=x; // put the input value into newnode-> data.
+    newnode->next=top; // point the next of newnode to top.
+    top=newnode; // point top to newnode
     printf("%d is pushed\n",x);
 }
 void pop()
@@ -24,11 +24,11 @@ void pop()
         printf("Stack is empty.\n");
     else
     {
-        struct node *temp= top;
-        top = top-> next;
-        temp->next=0;
-        printf("%d is popped",temp->data);
-        free(temp);
+        struct node *temp= top; // take a struct node pointer temp and point top
+        top = top-> next; // point the top to the next node of the list
+        temp->next=0; 
+        printf("%d is popped",temp->data); // print the value of temp-> data and free it.
+        free(temp); 
     }
 }
 void peek()
@@ -49,7 +49,7 @@ void display()
     else
     {
         printf("The Stack is:-\n");
-        while(temp!=NULL)
+        while(temp!=0)
         {
             printf("%d ",temp->data);
             temp=temp->next;
