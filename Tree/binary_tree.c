@@ -34,7 +34,6 @@ void preorder(struct node *t)
         preorder(t->left);
         preorder(t->right);
     }
-    printf("\n");
 }
 void inorder(struct node *t)
 {
@@ -44,7 +43,6 @@ void inorder(struct node *t)
         printf(" %d",t->data);
         inorder(t->right);
     }
-    printf("\n");
 }
 void postorder(struct node *t)
 {
@@ -54,18 +52,17 @@ void postorder(struct node *t)
         postorder(t->right);
         printf(" %d",t->data);
     }
-    printf("\n");
 }
 
 int main()
 {
     struct node *root;
     root=create();
-    printf("The preorder traversal of tree is:\n");
+    printf("\nThe preorder traversal of tree is:\n");
     preorder(root);
-    printf("The inorder traversal of tree is:\n");
+    printf("\nThe inorder traversal of tree is:\n");
     inorder(root);
-    printf("The postorder traversal of tree is:\n");
+    printf("\nThe postorder traversal of tree is:\n");
     postorder(root);
     return 0;
 }
