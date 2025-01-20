@@ -2,7 +2,7 @@
 #define n 5
 //declare an array of size of n
 int stack[n];
-int top=-1;
+int top=-1; // put top = -1
 
 void push();
 void pop();
@@ -69,7 +69,7 @@ void display()
         printf("\nUnderflow");
     else
     {
-        for(int i=top;i>=0;i--)
+        for(int i=top;i>=0;i--) // START A for loop for i=top to i=0 and print every element of the stack.
             printf(" %d",stack[i]);
 
     }
