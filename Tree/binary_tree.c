@@ -34,6 +34,7 @@ void preorder(struct node *t)
         preorder(t->left);
         preorder(t->right);
     }
+    printf("\n");
 }
 void inorder(struct node *t)
 {
@@ -43,6 +44,7 @@ void inorder(struct node *t)
         printf(" %d",t->data);
         inorder(t->right);
     }
+    printf("\n");
 }
 void postorder(struct node *t)
 {
@@ -52,6 +54,7 @@ void postorder(struct node *t)
         postorder(t->right);
         printf(" %d",t->data);
     }
+    printf("\n");
 }
 
 int main()
