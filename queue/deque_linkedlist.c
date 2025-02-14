@@ -82,13 +82,13 @@ void dequeue_f()
     }
     else if (front==rear)
     {
-        printf("\ndequed element is %d\n",front->data);
+        printf("\ndequeued element is %d\n",front->data);
         front=rear=0;
         free(temp); 
     }
     else
     {
-        printf("\ndequed element is %d\n",front->data);
+        printf("\ndequeued element is %d\n",front->data);
         front=front->next;
         free(temp);
     }
@@ -122,7 +122,7 @@ void dequeue_r()
     }
     else if (front==rear)
     {
-        printf("\ndequed element is %d from last\n",front->data);
+        printf("\ndequeued element is %d from last\n",front->data);
         front=rear=0;
         free(temp); 
     }

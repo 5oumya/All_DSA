@@ -68,8 +68,6 @@ void display()
         do
         {
             printf("%d ",queue[i]);
-            // if(i==rear)
-            //     break;
             i=(i+1)%n;
         }while(i!=(rear+1)%n);
     }
